@@ -1,0 +1,10 @@
+services:
+  pwn:
+    build: .
+    image: golden_byte_pwn:latest 
+    container_name: golden_byte
+    ports:
+      - "13005:5000"
+    privileged: true 
+    environment:
+      - JAIL_ENV_FLAG_VAL=grodno{D4dy4_m4TV31_Pr019r4l_kV4rT1RY_V_K421n0_V3D_n3_2N4L_PWN} 

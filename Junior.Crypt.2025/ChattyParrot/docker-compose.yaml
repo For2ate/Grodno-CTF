@@ -1,0 +1,10 @@
+services:
+  pwn:
+    build: .
+    image: chatty_parrot_pwn:latest 
+    container_name: chatty_parrot
+    ports:
+      - "13002:5000"
+    privileged: true 
+    environment:
+      - JAIL_ENV_FLAG_VAL="grodno{J35KiI_P4RR07_Drug_M47u3}" 
